@@ -29,6 +29,7 @@ hnswlib = "^0.8.0"
 annoy = "^1.17.3"
 plotly = "^5.18.0"
 implicit = "^0.7.2"
+torch = {version = "^2.2.1+cpu", source = "pytorch"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.4.3"
@@ -39,6 +40,12 @@ bandit = "^1.7.5"
 flake8 = "^6.1.0"
 pylint = "^3.0.2"
 black = "^23.10.1"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
 
 [tool.black]
 line-length = 120

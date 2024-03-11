@@ -85,5 +85,6 @@ def get_models(is_test: bool) -> Dict[Any, Any]:
         "userknn_always10_TRUE": UserKNNModel(),
         "dssm_v1": PrecomputeModel("dssm_recos.pkl", "popular.pkl"),
         "autoencoder_v1": AutoEncoderWrapper(),
-        "recbole_vae_epoch": RecboleWrapper()
+        "recbole_vae_epoch": RecboleWrapper(),
+        "lightFM_two_staged": PrecomputeModel("results_6.pkl", "popular.pkl"),
     }

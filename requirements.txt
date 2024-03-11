@@ -118,7 +118,7 @@ thop==0.1.1.post2209072238
 threadpoolctl==3.2.0
 tomli==2.0.1
 tomlkit==0.12.2
-torch==2.2.1+cpu
+
 tornado==6.3.3
 tqdm==4.66.1
 traitlets==5.13.0

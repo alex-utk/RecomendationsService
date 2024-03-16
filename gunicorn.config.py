@@ -57,7 +57,7 @@ loglevel = env("GUNICORN_LOGLEVEL", "INFO")
 capture_output = env("GUNICORN_CAPTURE_OUTPUT", False)
 
 # The log config dictionary to use.
-logconfig_dict = log.get_config(settings.get_config())
+logconfig_dict = log.get_config(settings.get_config(False))
 
 # The maximum size of HTTP request line in bytes.
 # This parameter can be used to prevent any DDOS attack.
